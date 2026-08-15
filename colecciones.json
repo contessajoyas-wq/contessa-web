@@ -1,0 +1,24 @@
+{
+  "colecciones": [
+    {
+      "nombre": "Notte",
+      "descripcion": "Cristales azul noche y negro. Piezas de carácter, para las ocasiones que se recuerdan.",
+      "visible": true
+    },
+    {
+      "nombre": "Día",
+      "descripcion": "Dorados, champagne y perla. Piezas luminosas para elevar cualquier día.",
+      "visible": true
+    },
+    {
+      "nombre": "Aros",
+      "descripcion": "Del aro clásico al racimo de cristal. El detalle que enmarca la cara.",
+      "visible": true
+    },
+    {
+      "nombre": "Pulseras",
+      "descripcion": "Tejidas a mano, para llevar solas o combinadas.",
+      "visible": true
+    }
+  ]
+}

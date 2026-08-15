@@ -1,0 +1,52 @@
+{
+  "piezas": [
+    {
+      "nombre": "Collar Notte",
+      "descripcion": "Cristales facetados azul noche tejidos a mano",
+      "precio": "$54.000",
+      "coleccion": "Notte",
+      "foto": "/media/collar-notte.jpg",
+      "visible": true
+    },
+    {
+      "nombre": "Collar Notte Cubo",
+      "descripcion": "Cubos de cristal azul noche, tejido en volumen",
+      "precio": "$58.000",
+      "coleccion": "Notte",
+      "foto": "/media/collar-notte-cubo.jpg",
+      "visible": true
+    },
+    {
+      "nombre": "Collar Venezia",
+      "descripcion": "Multihilo con perlas y flecos",
+      "precio": "$56.000",
+      "coleccion": "Día",
+      "foto": "/media/collar-venezia.jpg",
+      "visible": true
+    },
+    {
+      "nombre": "Collar Dorato",
+      "descripcion": "Rosetones de cristal champagne sobre cadena dorada",
+      "precio": "$46.000",
+      "coleccion": "Día",
+      "foto": "/media/collar-dorato.jpg",
+      "visible": true
+    },
+    {
+      "nombre": "Aros Notte",
+      "descripcion": "Racimos de cristal azul noche en tres caídas",
+      "precio": "$34.000",
+      "coleccion": "Aros",
+      "foto": "/media/aros-notte.jpg",
+      "visible": true
+    },
+    {
+      "nombre": "Aros Amalfi",
+      "descripcion": "Aros dorados con cristales colgantes",
+      "precio": "$32.000",
+      "coleccion": "Aros",
+      "foto": "/media/aros-amalfi.jpg",
+      "visible": true
+    }
+  ]
+}

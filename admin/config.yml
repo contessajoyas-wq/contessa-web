@@ -1,0 +1,117 @@
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: 'Nueva pieza: {{slug}}'
+    update: 'Actualizada: {{slug}}'
+    delete: 'Eliminada: {{slug}}'
+    uploadMedia: 'Foto subida: {{path}}'
+    deleteMedia: 'Foto eliminada: {{path}}'
+
+locale: 'es'
+media_folder: 'media'
+public_folder: '/media'
+
+site_url: https://contessajoyas.com.ar
+display_url: https://contessajoyas.com.ar
+logo_url: /img/logo.png
+
+collections:
+  - name: 'catalogo'
+    label: 'Catálogo'
+    files:
+      - name: 'piezas'
+        label: 'Piezas'
+        file: 'piezas.json'
+        format: 'json'
+        description: 'Acá se cargan las piezas que se ven en la web. Para agregar una nueva, tocá "Add piezas" abajo de todo.'
+        fields:
+          - label: 'Piezas'
+            name: 'piezas'
+            widget: 'list'
+            label_singular: 'Pieza'
+            summary: '{{fields.nombre}} — {{fields.precio}}'
+            fields:
+              - label: 'Foto de la pieza'
+                name: 'foto'
+                widget: 'image'
+                hint: 'Elegí una foto cuadrada si podés. Se ve mejor.'
+              - label: 'Nombre'
+                name: 'nombre'
+                widget: 'string'
+                hint: 'Ejemplo: Collar Noche Negro'
+              - label: 'Descripción corta'
+                name: 'descripcion'
+                widget: 'string'
+                required: false
+                hint: 'Una línea. Ejemplo: Cristales facetados negros tejidos a mano'
+              - label: 'Precio'
+                name: 'precio'
+                widget: 'string'
+                hint: 'Escribilo con el signo $. Ejemplo: $54.000'
+              - label: 'Línea'
+                name: 'coleccion'
+                widget: 'relation'
+                collection: 'catalogo'
+                file: 'lineas'
+                search_fields: ['colecciones.*.nombre']
+                display_fields: ['colecciones.*.nombre']
+                value_field: 'colecciones.*.nombre'
+                hint: 'A qué línea pertenece esta pieza'
+              - label: 'Mostrar en la web'
+                name: 'visible'
+                widget: 'boolean'
+                default: true
+                hint: 'Apagalo para ocultar la pieza sin borrarla (por ejemplo, si se agotó)'
+
+      - name: 'lineas'
+        label: 'Líneas'
+        file: 'colecciones.json'
+        format: 'json'
+        description: 'Las líneas son los grupos en los que se ordenan las piezas en la web.'
+        fields:
+          - label: 'Líneas'
+            name: 'colecciones'
+            widget: 'list'
+            label_singular: 'Línea'
+            summary: '{{fields.nombre}}'
+            fields:
+              - label: 'Nombre'
+                name: 'nombre'
+                widget: 'string'
+                hint: 'Ejemplo: Notte'
+              - label: 'Descripción'
+                name: 'descripcion'
+                widget: 'text'
+                required: false
+                hint: 'Una o dos líneas que expliquen el espíritu de esta línea'
+              - label: 'Mostrar en la web'
+                name: 'visible'
+                widget: 'boolean'
+                default: true
+
+  - name: 'ajustes'
+    label: 'Ajustes'
+    files:
+      - name: 'general'
+        label: 'Datos de contacto y textos'
+        file: 'config.json'
+        format: 'json'
+        fields:
+          - label: 'WhatsApp'
+            name: 'whatsapp'
+            widget: 'string'
+            hint: 'Solo números, con código de país y sin el +. Ejemplo: 5491155551234'
+          - label: 'Usuario de Instagram'
+            name: 'instagram'
+            widget: 'string'
+            hint: 'Sin el arroba. Ejemplo: contessa.joyas'
+          - label: 'Frase principal'
+            name: 'titular'
+            widget: 'string'
+          - label: 'Ubicación'
+            name: 'ubicacion'
+            widget: 'string'
+          - label: 'Texto de la sección Líneas'
+            name: 'textoLineas'
+            widget: 'text'
