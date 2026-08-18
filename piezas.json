@@ -1,49 +1,456 @@
 {
   "piezas": [
-    { "nombre": "Aros Noir", "descripcion": "Cristales negros facetados en diseño artesanal, de líneas elegantes y alta moda", "precio": "$30.000", "coleccion": "Aros", "foto": "/media/aros-noir.jpg", "visible": true },
-    { "nombre": "Aros Venezia", "descripcion": "Cristales en tonos chocolate y ámbar con destellos que reflejan la luz en cada movimiento", "precio": "$25.000", "coleccion": "Aros", "foto": "/media/aros-venezia.jpg", "visible": true },
-    { "nombre": "Aros Amalfi", "descripcion": "Elegancia, luz y movimiento en una pieza artesanal inspirada en el encanto italiano", "precio": "$30.000", "coleccion": "Aros", "foto": "/media/aros-amalfi.jpg", "visible": true },
-    { "nombre": "Aros Capri", "descripcion": "Un diseño sofisticado y atemporal, inspirado en la luz y el encanto de Capri", "precio": "$25.000", "coleccion": "Aros", "foto": "/media/aros-capri.jpg", "visible": true },
-    { "nombre": "Aros Bellagio", "descripcion": "Elegancia, luz y movimiento en una pieza artesanal inspirada en el encanto italiano", "precio": "$20.000", "coleccion": "Aros", "foto": "/media/aros-bellagio.jpg", "visible": true },
-    { "nombre": "Aros Portofino", "descripcion": "Una combinación preciosa de azul profundo, cristales facetados y delicados detalles plateados", "precio": "$20.000", "coleccion": "Aros", "foto": "/media/aros-portofino.jpg", "visible": true },
-
-    { "nombre": "Pulsera Ravena", "descripcion": "Pieza delicada y luminosa con pequeños cristales facetados que reflejan la luz con cada movimiento", "precio": "$30.000", "coleccion": "Pulseras", "foto": "/media/pulsera-ravena.jpg", "visible": true },
-    { "nombre": "Pulsera Siena", "descripcion": "Diseño tejido artesanal en tonos ámbar, caramelo y rosa cobrizo, cierre dorado y cadena extensible", "precio": "$40.000", "coleccion": "Pulseras", "foto": "/media/pulsera-siena.jpg", "visible": true },
-    { "nombre": "Pulsera Azzurra", "descripcion": "Fresca y elegante, inspirada en los tonos del Mediterráneo", "precio": "$40.000", "coleccion": "Pulseras", "foto": "/media/pulsera-azzurra.jpg", "visible": true },
-    { "nombre": "Pulsera Noir", "descripcion": "Pieza sofisticada en cristales negros de distintos tamaños, con efecto tejido y cierre T-bar plateado", "precio": "$40.000", "coleccion": "Pulseras", "foto": "/media/pulsera-noir.jpg", "visible": true },
-    { "nombre": "Pulsera Firenze", "descripcion": "Tonos vino y brillo dorado, para una pieza sofisticada y femenina", "precio": "$30.000", "coleccion": "Pulseras", "foto": "/media/pulsera-firenze.jpg", "visible": true },
-
-    { "nombre": "Cordón Amore", "descripcion": "Elegante soporte en cristales brillantes que también se luce como pulsera", "precio": "$30.000", "coleccion": "Accesorios", "foto": "/media/cordon-amore.jpg", "visible": true },
-    { "nombre": "Cordón Girasol", "descripcion": "Un girasol brillante en cristales que suma color y alegría a tu celular", "precio": "$30.000", "coleccion": "Accesorios", "foto": "/media/cordon-girasol.jpg", "visible": true },
-    { "nombre": "Cordón Fiore", "descripcion": "Delicadas flores en cristales que embellecen tu celular con un toque único", "precio": "$30.000", "coleccion": "Accesorios", "foto": "/media/cordon-fiore.jpg", "visible": true },
-
-    { "nombre": "Collar Bella Lágrima", "descripcion": "Collar de gran presencia, tejido con cristales negros facetados que crean un efecto de volumen y movimiento. Cierre plateado con strass", "precio": "$95.000", "coleccion": "Notte", "foto": "/media/notte-bella-lagrima.jpg", "visible": true },
-    { "nombre": "Collar Bella Cubos Notte", "descripcion": "Textura irregular tejida con pequeños cristales negros facetados en forma de cubo, con efecto de relieve orgánico y contemporáneo", "precio": "$95.000", "coleccion": "Notte", "foto": "/media/notte-bella-cubos-notte.jpg", "visible": true },
-    { "nombre": "Collar Bella Cubos Acqua", "descripcion": "Textura irregular tejida con pequeños cristales verde agua y dorado en forma de cubo, con efecto de relieve orgánico", "precio": "$95.000", "coleccion": "Notte", "foto": "/media/notte-bella-cubos-acqua.jpg", "visible": true },
-    { "nombre": "Collar Bella Cubos Rosso", "descripcion": "Textura irregular tejida con pequeños cristales rojos en forma de cubo, con efecto de relieve orgánico y contemporáneo", "precio": "$95.000", "coleccion": "Notte", "foto": "/media/notte-bella-cubos-rosso.jpg", "visible": true },
-    { "nombre": "Collar Bella Clásico", "descripcion": "Diseño delicado con cristales redondos que capturan la luz con suavidad en cada movimiento", "precio": "$60.000", "coleccion": "Notte", "foto": "/media/notte-bella-clasico.jpg", "visible": true },
-    { "nombre": "Collar Bella Dorata", "descripcion": "Esferas de diminutos cristales dorados que se alternan con finos canutillos en tono oro. Liviano y luminoso", "precio": "$75.000", "coleccion": "Notte", "foto": "/media/notte-bella-dorata.jpg", "visible": true },
-    { "nombre": "Collar Nobile Regina", "descripcion": "Gran despliegue artesanal en tonos chocolate y caramelo, combinado con perlas y flecos dorados en cascada. Inspiración palaciega", "precio": "$110.000", "coleccion": "Notte", "foto": "/media/notte-nobile-regina.jpg", "visible": true },
-    { "nombre": "Collar Nobile Smeraldo", "descripcion": "Tejido en verde esmeralda y detalles dorados, con flecos de gotas en tonos verde oliva metalizado. Pieza statement de inspiración palaciega", "precio": "$95.000", "coleccion": "Notte", "foto": "/media/notte-nobile-smeraldo.jpg", "visible": true },
-    { "nombre": "Collar Nobile Rubino", "descripcion": "Encaje artesanal en cristales dorados del que caen gotas facetadas en rojo rubí. Diseño calado, presencia majestuosa", "precio": "$95.000", "coleccion": "Notte", "foto": "/media/notte-nobile-rubino.jpg", "visible": true },
-    { "nombre": "Collar Nobile Peonía", "descripcion": "Delicado y femenino, tejido con perlas y pequeñas flores de cristal en tono fucsia. Aire romántico y refinado", "precio": "$95.000", "coleccion": "Notte", "foto": "/media/notte-nobile-peonia.jpg", "visible": true },
-
-    { "nombre": "Lungo Contessa", "descripcion": "Multihilera en cristales bronce y perlas: una sola hebra o tres hileras para más volumen. Nudo central y flecos en perla y cristal", "precio": "$65.000", "coleccion": "Lungo", "foto": "/media/lungo-contessa.jpg", "visible": true },
-    { "nombre": "Lungo Saffiro", "descripcion": "Collar largo y estilizado en fina cadena de cristales azul zafiro y negro, con racimos de cristal y detalles en plata", "precio": "$65.000", "coleccion": "Lungo", "foto": "/media/lungo-saffiro.jpg", "visible": true },
-    { "nombre": "Lungo Petróleo Cristal", "descripcion": "Extralargo en cristales azul petróleo y cuentas transparentes, cae en dos hebras rematadas en tonos grises y azulados", "precio": "$65.000", "coleccion": "Lungo", "foto": "/media/lungo-petroleo.jpg", "visible": true },
-    { "nombre": "Lungo Terra Cristal", "descripcion": "Extralargo en fina cadena de cuentas marrón, se lleva como collar o anudado como cinturón. Aire boho-chic", "precio": "$65.000", "coleccion": "Lungo", "foto": "/media/lungo-terra.jpg", "visible": true },
-    { "nombre": "Lungo Ambra", "descripcion": "Extralargo tejido en tonos ámbar, caramelo y dorado, rematado en dos esferas tejidas a modo de racimo brillante", "precio": "$70.000", "coleccion": "Lungo", "foto": "/media/lungo-ambra.jpg", "visible": true },
-    { "nombre": "Lungo Onice", "descripcion": "Extralargo en cristales negros y transparentes, rematado en borlas de cuero negro con cristal facetado y plata", "precio": "$75.000", "coleccion": "Lungo", "foto": "/media/lungo-onice.jpg", "visible": true },
-    { "nombre": "Lungo Passione", "descripcion": "Cristales facetados rojos con dijes metálicos ornamentales, cae en tiras de cuero gamuzado rojo. Efecto lariat con movimiento", "precio": "$65.000", "coleccion": "Lungo", "foto": "/media/lungo-passione.jpg", "visible": true },
-
-    { "nombre": "Fiori Fordaliso", "descripcion": "Fina cadena de cristales azules de la que cuelga un dije circular tejido, con efecto floral en distintos tonos de azul", "precio": "$65.000", "coleccion": "Fiore", "foto": "/media/fiori-fordaliso.jpg", "visible": true },
-    { "nombre": "Fiori Orquídea", "descripcion": "Cuentas de cristal verde con detalles en granate y dorado, dije floral con pétalos facetados y centro en granate", "precio": "$65.000", "coleccion": "Fiore", "foto": "/media/fiori-orquidea.jpg", "visible": true },
-    { "nombre": "Fiori Margarita", "descripcion": "Conjunto de collar y aros a juego: dije floral tejido en cristales transparentes con centro bronce y dorado, sobre cordón de cuero", "precio": "$65.000", "coleccion": "Fiore", "foto": "/media/fiori-margarita.jpg", "visible": true },
-    { "nombre": "Fiori Melograno", "descripcion": "Conjunto de collar y aros a juego: dije floral en cristales transparentes con centro rojo granate y detalles dorados", "precio": "$65.000", "coleccion": "Fiore", "foto": "/media/fiori-melograno.jpg", "visible": true },
-    { "nombre": "Fiori Anémona", "descripcion": "Conjunto de collar, colgante y aros a juego sobre cordón de cuero negro, con dije floral en cristal transparente y negro", "precio": "$65.000", "coleccion": "Fiore", "foto": "/media/fiori-anemona.jpg", "visible": true },
-    { "nombre": "Fiori Girasole", "descripcion": "Collar lariat sobre cordón de gamuza beige, dije floral en tonos crema y verde iridiscente. Se anuda de distintas formas", "precio": "$65.000", "coleccion": "Fiore", "foto": "/media/fiori-girasole.jpg", "visible": true },
-    { "nombre": "Fiori Girasole Tierra", "descripcion": "Collar lariat sobre cordón de gamuza marrón, dije floral en tonos crema y verde iridiscente. Look boho-chic con textura", "precio": "$65.000", "coleccion": "Fiore", "foto": "/media/fiori-girasole-tierra.jpg", "visible": true },
-    { "nombre": "Sinfín Rubí", "descripcion": "Extralargo en cuentas de cristal rojas con separadores en plata, sin cierre: varias vueltas al cuello o enrollado en la muñeca", "precio": "$75.000", "coleccion": "Fiore", "foto": "/media/sinfin-rubi.jpg", "visible": true },
-    { "nombre": "Sinfín Arena", "descripcion": "Extralargo en cuentas de cristal crudo con separadores en plata, sin cierre: varias vueltas al cuello o enrollado en la muñeca", "precio": "$75.000", "coleccion": "Fiore", "foto": "/media/sinfin-arena.jpg", "visible": true }
+    {
+      "nombre": "Aros Noir",
+      "descripcion": "Cristales negros facetados en diseño artesanal, de líneas elegantes y alta moda",
+      "precio": "$30.000",
+      "coleccion": "Aros",
+      "foto": "/media/aros-noir.jpg",
+      "visible": true,
+      "fotos": [
+        "/media/aros-noir.jpg",
+        "/media/aros-noir-2.jpg",
+        "/media/aros-noir-3.jpg",
+        "/media/aros-noir-4.jpg",
+        "/media/aros-noir-5.jpg"
+      ]
+    },
+    {
+      "nombre": "Aros Venezia",
+      "descripcion": "Cristales en tonos chocolate y ámbar con destellos que reflejan la luz en cada movimiento",
+      "precio": "$25.000",
+      "coleccion": "Aros",
+      "foto": "/media/aros-venezia.jpg",
+      "visible": true
+    },
+    {
+      "nombre": "Aros Amalfi",
+      "descripcion": "Elegancia, luz y movimiento en una pieza artesanal inspirada en el encanto italiano",
+      "precio": "$30.000",
+      "coleccion": "Aros",
+      "foto": "/media/aros-amalfi.jpg",
+      "visible": true,
+      "fotos": [
+        "/media/aros-amalfi.jpg",
+        "/media/aros-amalfi-2.jpg",
+        "/media/aros-amalfi-3.jpg",
+        "/media/aros-amalfi-4.jpg"
+      ]
+    },
+    {
+      "nombre": "Aros Capri",
+      "descripcion": "Un diseño sofisticado y atemporal, inspirado en la luz y el encanto de Capri",
+      "precio": "$25.000",
+      "coleccion": "Aros",
+      "foto": "/media/aros-capri.jpg",
+      "visible": true
+    },
+    {
+      "nombre": "Aros Bellagio",
+      "descripcion": "Elegancia, luz y movimiento en una pieza artesanal inspirada en el encanto italiano",
+      "precio": "$20.000",
+      "coleccion": "Aros",
+      "foto": "/media/aros-bellagio.jpg",
+      "visible": true
+    },
+    {
+      "nombre": "Aros Portofino",
+      "descripcion": "Una combinación preciosa de azul profundo, cristales facetados y delicados detalles plateados",
+      "precio": "$20.000",
+      "coleccion": "Aros",
+      "foto": "/media/aros-portofino.jpg",
+      "visible": true,
+      "fotos": [
+        "/media/aros-portofino.jpg",
+        "/media/aros-portofino-2.jpg"
+      ]
+    },
+    {
+      "nombre": "Pulsera Ravena",
+      "descripcion": "Pieza delicada y luminosa con pequeños cristales facetados que reflejan la luz con cada movimiento",
+      "precio": "$30.000",
+      "coleccion": "Pulseras",
+      "foto": "/media/pulsera-ravena.jpg",
+      "visible": true
+    },
+    {
+      "nombre": "Pulsera Siena",
+      "descripcion": "Diseño tejido artesanal en tonos ámbar, caramelo y rosa cobrizo, cierre dorado y cadena extensible",
+      "precio": "$40.000",
+      "coleccion": "Pulseras",
+      "foto": "/media/pulsera-siena.jpg",
+      "visible": true
+    },
+    {
+      "nombre": "Pulsera Azzurra",
+      "descripcion": "Fresca y elegante, inspirada en los tonos del Mediterráneo",
+      "precio": "$40.000",
+      "coleccion": "Pulseras",
+      "foto": "/media/pulsera-azzurra.jpg",
+      "visible": true,
+      "fotos": [
+        "/media/pulsera-azzurra.jpg",
+        "/media/pulsera-azzurra-2.jpg",
+        "/media/pulsera-azzurra-3.jpg",
+        "/media/pulsera-azzurra-4.jpg"
+      ]
+    },
+    {
+      "nombre": "Pulsera Noir",
+      "descripcion": "Pieza sofisticada en cristales negros de distintos tamaños, con efecto tejido y cierre T-bar plateado",
+      "precio": "$40.000",
+      "coleccion": "Pulseras",
+      "foto": "/media/pulsera-noir.jpg",
+      "visible": true,
+      "fotos": [
+        "/media/pulsera-noir.jpg",
+        "/media/pulsera-noir-2.jpg"
+      ]
+    },
+    {
+      "nombre": "Pulsera Firenze",
+      "descripcion": "Tonos vino y brillo dorado, para una pieza sofisticada y femenina",
+      "precio": "$30.000",
+      "coleccion": "Pulseras",
+      "foto": "/media/pulsera-firenze.jpg",
+      "visible": true
+    },
+    {
+      "nombre": "Cordón Amore",
+      "descripcion": "Elegante soporte en cristales brillantes que también se luce como pulsera",
+      "precio": "$30.000",
+      "coleccion": "Accesorios",
+      "foto": "/media/cordon-amore.jpg",
+      "visible": true
+    },
+    {
+      "nombre": "Cordón Girasol",
+      "descripcion": "Un girasol brillante en cristales que suma color y alegría a tu celular",
+      "precio": "$30.000",
+      "coleccion": "Accesorios",
+      "foto": "/media/cordon-girasol.jpg",
+      "visible": true
+    },
+    {
+      "nombre": "Cordón Fiore",
+      "descripcion": "Delicadas flores en cristales que embellecen tu celular con un toque único",
+      "precio": "$30.000",
+      "coleccion": "Accesorios",
+      "foto": "/media/cordon-fiore.jpg",
+      "visible": true
+    },
+    {
+      "nombre": "Collar Bella Lágrima",
+      "descripcion": "Collar de gran presencia, tejido con cristales negros facetados que crean un efecto de volumen y movimiento. Cierre plateado con strass",
+      "precio": "$95.000",
+      "coleccion": "Notte",
+      "foto": "/media/notte-bella-lagrima.jpg",
+      "visible": true,
+      "fotos": [
+        "/media/notte-bella-lagrima.jpg",
+        "/media/notte-bella-lagrima-2.jpg",
+        "/media/notte-bella-lagrima-3.jpg"
+      ]
+    },
+    {
+      "nombre": "Collar Bella Cubos Notte",
+      "descripcion": "Textura irregular tejida con pequeños cristales negros facetados en forma de cubo, con efecto de relieve orgánico y contemporáneo",
+      "precio": "$95.000",
+      "coleccion": "Notte",
+      "foto": "/media/notte-bella-cubos-notte.jpg",
+      "visible": true,
+      "fotos": [
+        "/media/notte-bella-cubos-notte.jpg",
+        "/media/notte-bella-cubos-notte-2.jpg",
+        "/media/notte-bella-cubos-notte-3.jpg",
+        "/media/notte-bella-cubos-notte-4.jpg",
+        "/media/notte-bella-cubos-notte-5.jpg",
+        "/media/notte-bella-cubos-notte-6.jpg"
+      ]
+    },
+    {
+      "nombre": "Collar Bella Cubos Acqua",
+      "descripcion": "Textura irregular tejida con pequeños cristales verde agua y dorado en forma de cubo, con efecto de relieve orgánico",
+      "precio": "$95.000",
+      "coleccion": "Notte",
+      "foto": "/media/notte-bella-cubos-acqua.jpg",
+      "visible": true,
+      "fotos": [
+        "/media/notte-bella-cubos-acqua.jpg",
+        "/media/notte-bella-cubos-acqua-2.jpg",
+        "/media/notte-bella-cubos-acqua-3.jpg"
+      ]
+    },
+    {
+      "nombre": "Collar Bella Cubos Rosso",
+      "descripcion": "Textura irregular tejida con pequeños cristales rojos en forma de cubo, con efecto de relieve orgánico y contemporáneo",
+      "precio": "$95.000",
+      "coleccion": "Notte",
+      "foto": "/media/notte-bella-cubos-rosso.jpg",
+      "visible": true,
+      "fotos": [
+        "/media/notte-bella-cubos-rosso.jpg",
+        "/media/notte-bella-cubos-rosso-2.jpg",
+        "/media/notte-bella-cubos-rosso-3.jpg"
+      ]
+    },
+    {
+      "nombre": "Collar Bella Clásico",
+      "descripcion": "Diseño delicado con cristales redondos que capturan la luz con suavidad en cada movimiento",
+      "precio": "$60.000",
+      "coleccion": "Notte",
+      "foto": "/media/notte-bella-clasico.jpg",
+      "visible": true,
+      "fotos": [
+        "/media/notte-bella-clasico.jpg",
+        "/media/notte-bella-clasico-2.jpg"
+      ]
+    },
+    {
+      "nombre": "Collar Bella Dorata",
+      "descripcion": "Esferas de diminutos cristales dorados que se alternan con finos canutillos en tono oro. Liviano y luminoso",
+      "precio": "$75.000",
+      "coleccion": "Notte",
+      "foto": "/media/notte-bella-dorata.jpg",
+      "visible": true,
+      "fotos": [
+        "/media/notte-bella-dorata.jpg",
+        "/media/notte-bella-dorata-2.jpg",
+        "/media/notte-bella-dorata-3.jpg"
+      ]
+    },
+    {
+      "nombre": "Collar Nobile Regina",
+      "descripcion": "Gran despliegue artesanal en tonos chocolate y caramelo, combinado con perlas y flecos dorados en cascada. Inspiración palaciega",
+      "precio": "$110.000",
+      "coleccion": "Notte",
+      "foto": "/media/notte-nobile-regina.jpg",
+      "visible": true
+    },
+    {
+      "nombre": "Collar Nobile Smeraldo",
+      "descripcion": "Tejido en verde esmeralda y detalles dorados, con flecos de gotas en tonos verde oliva metalizado. Pieza statement de inspiración palaciega",
+      "precio": "$95.000",
+      "coleccion": "Notte",
+      "foto": "/media/notte-nobile-smeraldo.jpg",
+      "visible": true,
+      "fotos": [
+        "/media/notte-nobile-smeraldo.jpg",
+        "/media/notte-nobile-smeraldo-2.jpg"
+      ]
+    },
+    {
+      "nombre": "Collar Nobile Rubino",
+      "descripcion": "Encaje artesanal en cristales dorados del que caen gotas facetadas en rojo rubí. Diseño calado, presencia majestuosa",
+      "precio": "$95.000",
+      "coleccion": "Notte",
+      "foto": "/media/notte-nobile-rubino.jpg",
+      "visible": true,
+      "fotos": [
+        "/media/notte-nobile-rubino.jpg",
+        "/media/notte-nobile-rubino-2.jpg"
+      ]
+    },
+    {
+      "nombre": "Collar Nobile Peonía",
+      "descripcion": "Delicado y femenino, tejido con perlas y pequeñas flores de cristal en tono fucsia. Aire romántico y refinado",
+      "precio": "$95.000",
+      "coleccion": "Notte",
+      "foto": "/media/notte-nobile-peonia.jpg",
+      "visible": true,
+      "fotos": [
+        "/media/notte-nobile-peonia.jpg",
+        "/media/notte-nobile-peonia-2.jpg"
+      ]
+    },
+    {
+      "nombre": "Lungo Contessa",
+      "descripcion": "Multihilera en cristales bronce y perlas: una sola hebra o tres hileras para más volumen. Nudo central y flecos en perla y cristal",
+      "precio": "$65.000",
+      "coleccion": "Lungo",
+      "foto": "/media/lungo-contessa.jpg",
+      "visible": true,
+      "fotos": [
+        "/media/lungo-contessa.jpg",
+        "/media/lungo-contessa-2.jpg",
+        "/media/lungo-contessa-3.jpg"
+      ]
+    },
+    {
+      "nombre": "Lungo Saffiro",
+      "descripcion": "Collar largo y estilizado en fina cadena de cristales azul zafiro y negro, con racimos de cristal y detalles en plata",
+      "precio": "$65.000",
+      "coleccion": "Lungo",
+      "foto": "/media/lungo-saffiro.jpg",
+      "visible": true,
+      "fotos": [
+        "/media/lungo-saffiro.jpg",
+        "/media/lungo-saffiro-2.jpg"
+      ]
+    },
+    {
+      "nombre": "Lungo Petróleo Cristal",
+      "descripcion": "Extralargo en cristales azul petróleo y cuentas transparentes, cae en dos hebras rematadas en tonos grises y azulados",
+      "precio": "$65.000",
+      "coleccion": "Lungo",
+      "foto": "/media/lungo-petroleo.jpg",
+      "visible": true,
+      "fotos": [
+        "/media/lungo-petroleo.jpg",
+        "/media/lungo-petroleo-2.jpg",
+        "/media/lungo-petroleo-3.jpg",
+        "/media/lungo-petroleo-4.jpg"
+      ]
+    },
+    {
+      "nombre": "Lungo Terra Cristal",
+      "descripcion": "Extralargo en fina cadena de cuentas marrón, se lleva como collar o anudado como cinturón. Aire boho-chic",
+      "precio": "$65.000",
+      "coleccion": "Lungo",
+      "foto": "/media/lungo-terra.jpg",
+      "visible": true,
+      "fotos": [
+        "/media/lungo-terra.jpg",
+        "/media/lungo-terra-2.jpg",
+        "/media/lungo-terra-3.jpg",
+        "/media/lungo-terra-4.jpg"
+      ]
+    },
+    {
+      "nombre": "Lungo Ambra",
+      "descripcion": "Extralargo tejido en tonos ámbar, caramelo y dorado, rematado en dos esferas tejidas a modo de racimo brillante",
+      "precio": "$70.000",
+      "coleccion": "Lungo",
+      "foto": "/media/lungo-ambra.jpg",
+      "visible": true
+    },
+    {
+      "nombre": "Lungo Onice",
+      "descripcion": "Extralargo en cristales negros y transparentes, rematado en borlas de cuero negro con cristal facetado y plata",
+      "precio": "$75.000",
+      "coleccion": "Lungo",
+      "foto": "/media/lungo-onice.jpg",
+      "visible": true,
+      "fotos": [
+        "/media/lungo-onice.jpg",
+        "/media/lungo-onice-2.jpg",
+        "/media/lungo-onice-3.jpg",
+        "/media/lungo-onice-4.jpg",
+        "/media/lungo-onice-5.jpg"
+      ]
+    },
+    {
+      "nombre": "Lungo Passione",
+      "descripcion": "Cristales facetados rojos con dijes metálicos ornamentales, cae en tiras de cuero gamuzado rojo. Efecto lariat con movimiento",
+      "precio": "$65.000",
+      "coleccion": "Lungo",
+      "foto": "/media/lungo-passione.jpg",
+      "visible": true,
+      "fotos": [
+        "/media/lungo-passione.jpg",
+        "/media/lungo-passione-2.jpg",
+        "/media/lungo-passione-3.jpg"
+      ]
+    },
+    {
+      "nombre": "Fiori Fordaliso",
+      "descripcion": "Fina cadena de cristales azules de la que cuelga un dije circular tejido, con efecto floral en distintos tonos de azul",
+      "precio": "$65.000",
+      "coleccion": "Fiore",
+      "foto": "/media/fiori-fordaliso.jpg",
+      "visible": true,
+      "fotos": [
+        "/media/fiori-fordaliso.jpg",
+        "/media/fiori-fordaliso-2.jpg",
+        "/media/fiori-fordaliso-3.jpg",
+        "/media/fiori-fordaliso-4.jpg"
+      ]
+    },
+    {
+      "nombre": "Fiori Orquídea",
+      "descripcion": "Cuentas de cristal verde con detalles en granate y dorado, dije floral con pétalos facetados y centro en granate",
+      "precio": "$65.000",
+      "coleccion": "Fiore",
+      "foto": "/media/fiori-orquidea.jpg",
+      "visible": true
+    },
+    {
+      "nombre": "Fiori Margarita",
+      "descripcion": "Conjunto de collar y aros a juego: dije floral tejido en cristales transparentes con centro bronce y dorado, sobre cordón de cuero",
+      "precio": "$65.000",
+      "coleccion": "Fiore",
+      "foto": "/media/fiori-margarita.jpg",
+      "visible": true,
+      "fotos": [
+        "/media/fiori-margarita.jpg",
+        "/media/fiori-margarita-2.jpg",
+        "/media/fiori-margarita-3.jpg",
+        "/media/fiori-margarita-4.jpg",
+        "/media/fiori-margarita-5.jpg"
+      ]
+    },
+    {
+      "nombre": "Fiori Melograno",
+      "descripcion": "Conjunto de collar y aros a juego: dije floral en cristales transparentes con centro rojo granate y detalles dorados",
+      "precio": "$65.000",
+      "coleccion": "Fiore",
+      "foto": "/media/fiori-melograno.jpg",
+      "visible": true,
+      "fotos": [
+        "/media/fiori-melograno.jpg",
+        "/media/fiori-melograno-2.jpg",
+        "/media/fiori-melograno-3.jpg",
+        "/media/fiori-melograno-4.jpg"
+      ]
+    },
+    {
+      "nombre": "Fiori Anémona",
+      "descripcion": "Conjunto de collar, colgante y aros a juego sobre cordón de cuero negro, con dije floral en cristal transparente y negro",
+      "precio": "$65.000",
+      "coleccion": "Fiore",
+      "foto": "/media/fiori-anemona.jpg",
+      "visible": true,
+      "fotos": [
+        "/media/fiori-anemona.jpg",
+        "/media/fiori-anemona-2.jpg",
+        "/media/fiori-anemona-3.jpg"
+      ]
+    },
+    {
+      "nombre": "Fiori Girasole",
+      "descripcion": "Collar lariat sobre cordón de gamuza beige, dije floral en tonos crema y verde iridiscente. Se anuda de distintas formas",
+      "precio": "$65.000",
+      "coleccion": "Fiore",
+      "foto": "/media/fiori-girasole.jpg",
+      "visible": true
+    },
+    {
+      "nombre": "Fiori Girasole Tierra",
+      "descripcion": "Collar lariat sobre cordón de gamuza marrón, dije floral en tonos crema y verde iridiscente. Look boho-chic con textura",
+      "precio": "$65.000",
+      "coleccion": "Fiore",
+      "foto": "/media/fiori-girasole-tierra.jpg",
+      "visible": true
+    },
+    {
+      "nombre": "Sinfín Rubí",
+      "descripcion": "Extralargo en cuentas de cristal rojas con separadores en plata, sin cierre: varias vueltas al cuello o enrollado en la muñeca",
+      "precio": "$75.000",
+      "coleccion": "Fiore",
+      "foto": "/media/sinfin-rubi.jpg",
+      "visible": true,
+      "fotos": [
+        "/media/sinfin-rubi.jpg",
+        "/media/sinfin-rubi-2.jpg"
+      ]
+    },
+    {
+      "nombre": "Sinfín Arena",
+      "descripcion": "Extralargo en cuentas de cristal crudo con separadores en plata, sin cierre: varias vueltas al cuello o enrollado en la muñeca",
+      "precio": "$75.000",
+      "coleccion": "Fiore",
+      "foto": "/media/sinfin-arena.jpg",
+      "visible": true
+    }
   ]
 }
