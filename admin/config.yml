@@ -39,12 +39,12 @@ collections:
               - label: 'Nombre'
                 name: 'nombre'
                 widget: 'string'
-                hint: 'Ejemplo: Collar Noche Negro'
+                hint: 'Ejemplo: Collar Rubino'
               - label: 'Descripción corta'
                 name: 'descripcion'
                 widget: 'string'
                 required: false
-                hint: 'Una línea. Ejemplo: Cristales facetados negros tejidos a mano'
+                hint: 'Una línea. Ejemplo: Cristales facetados color bordó, tejidos a mano'
               - label: 'Precio'
                 name: 'precio'
                 widget: 'string'
@@ -68,7 +68,7 @@ collections:
         label: 'Líneas'
         file: 'colecciones.json'
         format: 'json'
-        description: 'Las líneas son los grupos en los que se ordenan las piezas en la web.'
+        description: 'Las líneas son los grupos en los que se ordenan las piezas en la web y en la página de Colección.'
         fields:
           - label: 'Líneas'
             name: 'colecciones'
@@ -79,7 +79,7 @@ collections:
               - label: 'Nombre'
                 name: 'nombre'
                 widget: 'string'
-                hint: 'Ejemplo: Notte'
+                hint: 'Ejemplo: Gala'
               - label: 'Descripción'
                 name: 'descripcion'
                 widget: 'text'
@@ -89,6 +89,20 @@ collections:
                 name: 'visible'
                 widget: 'boolean'
                 default: true
+
+  - name: 'portada'
+    label: 'Portada'
+    files:
+      - name: 'carrusel'
+        label: 'Fotos que van rotando'
+        file: 'portada.json'
+        format: 'json'
+        description: 'Las fotos grandes que rotan en la portada de Inicio. Recomendado: 4 a 8 fotos, todas en formato horizontal.'
+        fields:
+          - label: 'Fotos'
+            name: 'fotos'
+            widget: 'list'
+            field: { label: 'Foto', name: 'foto', widget: 'image' }
 
   - name: 'ajustes'
     label: 'Ajustes'
