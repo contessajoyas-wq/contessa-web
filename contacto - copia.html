@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto — CONTESSA</title>
+<meta name="description" content="Escribinos por WhatsApp o Instagram. Envíos a todo el país en el packaging CONTESSA.">
+<link rel="icon" href="/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Cinzel:wght@400;500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body data-page="contacto">
+
+<div id="nav-placeholder"></div>
+
+<div class="pagehero">
+  <div class="wrap">
+    <p class="eyebrow">Simple y personal</p>
+    <h1>Hablemos</h1>
+    <p>Elegí tu pieza y escribinos. Te acompañamos en todo el proceso, sin apuro.</p>
+  </div>
+</div>
+
+<section style="padding-top:40px;">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Cómo comprar</p>
+      <h2>Tres pasos, sin vueltas</h2>
+      <div class="divider"><span>✦</span></div>
+    </div>
+    <div class="pasos">
+      <div class="paso"><div class="num">I</div><h3>Elegí tu pieza</h3><p>Mirá la colección y quedate con la que más te guste.</p></div>
+      <div class="paso"><div class="num">II</div><h3>Escribinos por WhatsApp</h3><p>Te contamos disponibilidad, medios de pago y envío. Sin apuro.</p></div>
+      <div class="paso"><div class="num">III</div><h3>La recibís en casa</h3><p>Enviamos a todo el país en su packaging CONTESSA.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Elegí tu vía</p>
+      <h2>Estamos para ayudarte</h2>
+      <div class="divider"><span>✦</span></div>
+    </div>
+    <div class="contacto-grid">
+      <div class="contacto-card">
+        <div class="ico">✉</div>
+        <h3>WhatsApp</h3>
+        <p>La forma más rápida de consultar disponibilidad, precios y envíos.</p>
+        <a class="btn-mini" data-wa data-wa-msg="Hola CONTESSA! Quiero consultar por una pieza" href="#" target="_blank" rel="noopener">Escribinos</a>
+      </div>
+      <div class="contacto-card">
+        <div class="ico">◇</div>
+        <h3>Instagram</h3>
+        <p>Seguinos para ver piezas nuevas, novedades y el detrás de escena.</p>
+        <a class="btn-mini" data-ig href="#" target="_blank" rel="noopener">@contessa.joyas</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cierre">
+  <div class="wrap">
+    <h2>¿Lista para elegir la tuya?</h2>
+    <p id="ubicacion2">Buenos Aires · Argentina — envíos a todo el país</p>
+    <a class="cta" href="/coleccion.html">Ver la colección</a>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script src="/js/datos.js"></script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+(function(){
+  CONTESSA.renderNav();
+  CONTESSA.cargarDatos().then(function(d){
+    CONTESSA.renderFooter(d.cfg);
+    CONTESSA.aplicarContactoGlobal(d.cfg);
+    if (d.cfg.ubicacion) document.getElementById('ubicacion2').textContent = d.cfg.ubicacion + ' — envíos a todo el país';
+  });
+})();
+</script>
+
+</body>
+</html>

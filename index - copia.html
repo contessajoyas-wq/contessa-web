@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CONTESSA — Joyas que iluminan el alma</title>
+<meta name="description" content="Bijouterie artesanal inspirada en la elegancia italiana. Piezas únicas de cristales y perlas, tejidas a mano en Buenos Aires. Envíos a todo el país.">
+<meta property="og:title" content="CONTESSA — Joyas que iluminan el alma">
+<meta property="og:description" content="Bijouterie artesanal inspirada en la elegancia italiana. Piezas únicas tejidas a mano en Buenos Aires.">
+<meta property="og:image" content="/img/banda.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Cinzel:wght@400;500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body data-page="inicio">
+
+<div id="nav-placeholder"></div>
+
+<header class="hero" id="hero"></header>
+
+<section id="esencia">
+  <div class="wrap">
+    <div class="esencia">
+      <div>
+        <p class="eyebrow">Nuestra esencia</p>
+        <h2 style="font-size:29px;color:var(--oroOsc);margin-bottom:18px;">Cada pieza guarda una historia</h2>
+        <p>CONTESSA nace de una idea simple: que una joya no se elige solo por cómo se ve, sino por cómo te hace sentir cuando la usás.</p>
+        <p>Trabajamos con cristales, perlas y mostacillas cuidadosamente seleccionadas, tejiendo cada pieza a mano, de a una. Nada sale en serie.</p>
+        <div class="divider" style="margin-left:0;justify-content:flex-start;max-width:130px;"><span>✦</span></div>
+        <a class="btn-mini" href="/nosotros.html">Conocé la marca</a>
+      </div>
+      <div class="foto"><img src="/img/esencia.jpg" alt="Collar CONTESSA" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="lineas">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Nuestras líneas</p>
+      <h2>La colección</h2>
+      <div class="divider"><span>✦</span></div>
+      <p id="textoLineas">Cada línea nace de una idea distinta. Todas se tejen a mano, de a una, con cristales y perlas seleccionadas.</p>
+    </div>
+    <div class="lineas-grid" id="lineas-grid"></div>
+  </div>
+</section>
+
+<div class="banda">
+  <img src="/img/banda.jpg" alt="Collar CONTESSA">
+  <div class="txt">
+    <h2>Un detalle puede cambiar todo un look</h2>
+    <p>Piezas con presencia, para los días que merecen algo especial</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Por qué CONTESSA</p>
+      <h2>Lo que nos distingue</h2>
+      <div class="divider"><span>✦</span></div>
+    </div>
+    <div class="valores">
+      <div class="valor"><div class="ico">✦</div><h3>Diseño atemporal</h3><p>Piezas que no pasan de moda y acompañan cualquier etapa.</p></div>
+      <div class="valor"><div class="ico">◇</div><h3>Cristales seleccionados</h3><p>Cristal, perla y mostacilla elegidos uno por uno.</p></div>
+      <div class="valor"><div class="ico">♡</div><h3>Tejido a mano</h3><p>Cada pieza se arma de a una, con dedicación y detalle.</p></div>
+      <div class="valor"><div class="ico">✉</div><h3>Envíos a todo el país</h3><p>Llega en su packaging CONTESSA, listo para regalar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cierre">
+  <div class="wrap">
+    <h2>¿Lista para elegir la tuya?</h2>
+    <p>Mirá la colección completa o escribinos directamente por WhatsApp.</p>
+    <a class="cta" href="/coleccion.html">Ver la colección</a>
+    <a class="cta linea2" style="color:var(--oroOsc);border-color:var(--oro);" data-wa data-wa-msg="Hola CONTESSA! Quiero consultar por una pieza" href="#" target="_blank" rel="noopener">Escribinos</a>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script src="/js/datos.js"></script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+(function(){
+  CONTESSA.renderNav();
+
+  var hero = document.getElementById('hero');
+  var slidesHtml = '';
+  var dotsHtml = '';
+
+  CONTESSA.cargarDatos().then(function(d){
+    CONTESSA.renderFooter(d.cfg);
+    var l = CONTESSA.aplicarContactoGlobal(d.cfg);
+
+    if (d.cfg.titular) {} // reservado
+    if (d.cfg.textoLineas) document.getElementById('textoLineas').textContent = d.cfg.textoLineas;
+
+    // ---- Hero carousel ----
+    var fotos = d.portada && d.portada.length ? d.portada : ['/img/banda.jpg'];
+    fotos.forEach(function(src, i){
+      slidesHtml += '<div class="hero-slide' + (i===0?' activa':'') + '"><img src="' + CONTESSA.esc(src) + '" alt="CONTESSA" loading="' + (i===0?'eager':'lazy') + '"></div>';
+      dotsHtml += '<span' + (i===0?' class="activo"':'') + '></span>';
+    });
+    hero.innerHTML = slidesHtml
+      + '<div class="hero-contenido">'
+      +   '<h1 id="titular" class="sr-only">CONTESSA — ' + CONTESSA.esc(d.cfg.titular || 'Joyas que iluminan el alma') + '</h1>'
+      +   '<img class="logo" src="/img/logo-hero.png" alt="CONTESSA — Joyas que iluminan el alma">'
+      +   '<p class="hero-tagline">' + CONTESSA.esc(d.cfg.titular || 'Joyas que iluminan el alma') + '</p>'
+      +   '<p class="sub" id="ubicacion">' + CONTESSA.esc(d.cfg.ubicacion || 'Buenos Aires · Argentina') + '</p>'
+      +   '<a class="cta" href="/coleccion.html">Ver la colección</a>'
+      +   '<a class="cta linea2" href="/nosotros.html">Nuestra esencia</a>'
+      + '</div>'
+      + '<div class="hero-dots">' + dotsHtml + '</div>';
+
+    if (fotos.length > 1) {
+      var idx = 0;
+      var slides = hero.querySelectorAll('.hero-slide');
+      var dots = hero.querySelectorAll('.hero-dots span');
+      setInterval(function(){
+        slides[idx].classList.remove('activa');
+        dots[idx].classList.remove('activo');
+        idx = (idx + 1) % slides.length;
+        slides[idx].classList.add('activa');
+        dots[idx].classList.add('activo');
+      }, 4800);
+    }
+
+    // ---- Líneas grid (una foto representativa por línea) ----
+    var cont = document.getElementById('lineas-grid');
+    cont.innerHTML = d.cols.map(function(c){
+      var piezaRep = d.piezas.find(function(p){ return p.coleccion === c.nombre; });
+      var foto = piezaRep ? piezaRep.foto : '/img/banda.jpg';
+      var cant = d.piezas.filter(function(p){ return p.coleccion === c.nombre; }).length;
+      return ''
+        + '<a class="linea-card" href="/coleccion.html?linea=' + encodeURIComponent(c.nombre) + '">'
+        +   '<img src="' + CONTESSA.esc(foto) + '" alt="Línea ' + CONTESSA.esc(c.nombre) + '">'
+        +   '<div class="txt"><span class="sm">' + cant + ' ' + (cant===1?'pieza':'piezas') + '</span><h3>' + CONTESSA.esc(c.nombre) + '</h3><p>' + CONTESSA.esc(c.descripcion) + '</p></div>'
+        + '</a>';
+    }).join('');
+  });
+})();
+</script>
+
+</body>
+</html>

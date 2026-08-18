@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Colección — CONTESSA</title>
+<meta name="description" content="Descubrí las seis líneas de CONTESSA: Gala, Lungo, Fiore, Aros, Pulseras y Accesorios. Piezas tejidas a mano en cristal y perlas.">
+<link rel="icon" href="/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Cinzel:wght@400;500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body data-page="coleccion">
+
+<div id="nav-placeholder"></div>
+
+<div class="pagehero">
+  <div class="wrap">
+    <p class="eyebrow">La colección completa</p>
+    <h1>Seis líneas, un mismo espíritu</h1>
+    <p id="textoLineas">Cada línea nace de una idea distinta. Todas se tejen a mano, de a una, con cristales y perlas seleccionadas.</p>
+  </div>
+</div>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="chips" id="chips"></div>
+    <div id="lineas-cont"></div>
+  </div>
+</section>
+
+<section class="cierre">
+  <div class="wrap">
+    <h2>¿No encontrás lo que buscás?</h2>
+    <p>Escribinos y te ayudamos a encontrar la pieza perfecta.</p>
+    <a class="cta" data-wa data-wa-msg="Hola CONTESSA! Quiero consultar por una pieza" href="#" target="_blank" rel="noopener">Escribinos por WhatsApp</a>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script src="/js/datos.js"></script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+(function(){
+  CONTESSA.renderNav();
+
+  CONTESSA.cargarDatos().then(function(d){
+    CONTESSA.renderFooter(d.cfg);
+    var l = CONTESSA.aplicarContactoGlobal(d.cfg);
+    if (d.cfg.textoLineas) document.getElementById('textoLineas').textContent = d.cfg.textoLineas;
+
+    var grupos = CONTESSA.agrupar(d.cols, d.piezas);
+
+    // chips
+    var chips = document.getElementById('chips');
+    var botones = ['<button data-f="todas" class="activo">Todas</button>']
+      .concat(grupos.map(function(g){ return '<button data-f="' + CONTESSA.slug(g.nombre) + '">' + CONTESSA.esc(g.nombre) + '</button>'; }));
+    chips.innerHTML = botones.join('');
+
+    // bloques
+    var cont = document.getElementById('lineas-cont');
+    cont.innerHTML = grupos.map(function(g){
+      var cards = g.items.map(function(p){ return CONTESSA.tarjetaPieza(p, l); }).join('');
+      return ''
+        + '<div class="linea-bloque" data-linea="' + CONTESSA.slug(g.nombre) + '" id="linea-' + CONTESSA.slug(g.nombre) + '">'
+        +   '<div class="linea-head">'
+        +     '<h3>' + CONTESSA.esc(g.nombre) + '</h3>'
+        +     (g.descripcion ? '<p>' + CONTESSA.esc(g.descripcion) + '</p>' : '')
+        +   '</div>'
+        +   '<div class="grid">' + cards + '</div>'
+        + '</div>';
+    }).join('');
+
+    function filtrar(f){
+      chips.querySelectorAll('button').forEach(function(b){ b.classList.toggle('activo', b.getAttribute('data-f') === f); });
+      cont.querySelectorAll('.linea-bloque').forEach(function(bloque){
+        bloque.style.display = (f === 'todas' || bloque.getAttribute('data-linea') === f) ? '' : 'none';
+      });
+    }
+    chips.addEventListener('click', function(e){
+      var btn = e.target.closest('button');
+      if (!btn) return;
+      filtrar(btn.getAttribute('data-f'));
+    });
+
+    // deep-link ?linea=Gala
+    var params = new URLSearchParams(location.search);
+    var pedida = params.get('linea');
+    if (pedida) {
+      var f = CONTESSA.slug(pedida);
+      filtrar(f);
+      var el = document.getElementById('linea-' + f);
+      if (el) setTimeout(function(){ el.scrollIntoView({behavior:'smooth', block:'start'}); }, 150);
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
