@@ -109,8 +109,9 @@
     });
     hero.innerHTML = slidesHtml
       + '<div class="hero-contenido">'
+      +   '<h1 id="titular" class="sr-only">CONTESSA — ' + CONTESSA.esc(d.cfg.titular || 'Joyas que iluminan el alma') + '</h1>'
       +   '<img class="logo" src="/img/logo-hero.png" alt="CONTESSA — Joyas que iluminan el alma">'
-      +   '<h1 id="titular" class="sr-only">' + CONTESSA.esc(d.cfg.titular || 'Joyas que iluminan el alma') + '</h1>'
+      +   '<p class="hero-tagline">' + CONTESSA.esc(d.cfg.titular || 'Joyas que iluminan el alma') + '</p>'
       +   '<p class="sub" id="ubicacion">' + CONTESSA.esc(d.cfg.ubicacion || 'Buenos Aires · Argentina') + '</p>'
       +   '<a class="cta" href="/coleccion.html">Ver la colección</a>'
       +   '<a class="cta linea2" href="/nosotros.html">Nuestra esencia</a>'
