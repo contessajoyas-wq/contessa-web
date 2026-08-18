@@ -13,7 +13,10 @@
   function pedirJSON(archivo, clave, respaldo) {
     return fetch(archivo, { cache: 'no-cache' })
       .then(function (r) { if (!r.ok) throw 0; return r.json(); })
-      .then(function (j) { return (j && j[clave]) ? j[clave] : respaldo; })
+      .then(function (j) {
+        if (clave === null) return (j && typeof j === 'object') ? j : respaldo;
+        return (j && j[clave]) ? j[clave] : respaldo;
+      })
       .catch(function () { return respaldo; });
   }
 
@@ -88,7 +91,7 @@
     }).join('');
     var html = ''
       + '<div class="wrap">'
-      + '<a class="marca" href="/index.html"><img src="/img/logo.png" alt="CONTESSA"><span>CONTESSA</span></a>'
+      + '<a class="marca" href="/index.html"><span>CONTESSA</span></a>'
       + '<ul id="navlist">' + items
       + '<li><a class="navlink navcta" data-wa data-wa-msg="Hola CONTESSA! Quiero consultar por una pieza" href="#" target="_blank" rel="noopener">WhatsApp</a></li>'
       + '</ul>'
