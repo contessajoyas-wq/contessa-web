@@ -35,7 +35,14 @@ collections:
               - label: 'Foto de la pieza'
                 name: 'foto'
                 widget: 'image'
-                hint: 'Elegí una foto cuadrada si podés. Se ve mejor.'
+                hint: 'Foto principal. Elegí una cuadrada si podés, se ve mejor.'
+              - label: 'Más fotos de este modelo'
+                name: 'fotos'
+                widget: 'list'
+                required: false
+                label_singular: 'Foto'
+                field: { label: 'Foto', name: 'foto', widget: 'image' }
+                hint: 'Si cargás más de una, en la Colección se van pasando solas. La primera de esta lista tiene que ser la misma foto principal de arriba.'
               - label: 'Nombre'
                 name: 'nombre'
                 widget: 'string'

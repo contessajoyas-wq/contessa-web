@@ -67,14 +67,89 @@
 
   function tarjetaPieza(p, waLink) {
     var msg = 'Hola CONTESSA! Me interesa el ' + p.nombre;
+    var fotos = (p.fotos && p.fotos.length) ? p.fotos : [p.foto];
+    fotos = fotos.filter(function (f) { return !!f; });
+    if (!fotos.length) fotos = [p.foto];
+
+    var slides = fotos.map(function (f, i) {
+      return '<img class="slide' + (i === 0 ? ' activa' : '') + '" src="' + esc(f)
+        + '" alt="' + esc(p.nombre) + '" loading="lazy">';
+    }).join('');
+
+    var puntos = fotos.length > 1
+      ? '<span class="pieza-dots">' + fotos.map(function (f, i) {
+          return '<i' + (i === 0 ? ' class="activo"' : '') + '></i>';
+        }).join('') + '</span>'
+      : '';
+
     return ''
       + '<article class="pieza">'
-      + '<div class="pieza-img"><img src="' + esc(p.foto) + '" alt="' + esc(p.nombre) + '" loading="lazy"></div>'
+      + '<div class="pieza-img' + (fotos.length > 1 ? ' multi' : '') + '">' + slides + puntos + '</div>'
       + '<h4>' + esc(p.nombre) + '</h4>'
       + '<p class="desc">' + esc(p.descripcion) + '</p>'
       + '<p class="precio">' + esc(p.precio) + '</p>'
       + '<a class="btn-mini" href="' + waLink.waMsg(msg) + '" target="_blank" rel="noopener">Consultar</a>'
       + '</article>';
+  }
+
+  /* Carrusel de fotos dentro de cada tarjeta: si un modelo tiene más de una
+     foto, se van pasando solas. Se escalonan para que no cambien todas juntas,
+     y solo corren las tarjetas que están a la vista. */
+  function activarGalerias(raiz) {
+    var cajas = (raiz || document).querySelectorAll('.pieza-img.multi');
+    if (!cajas.length) return;
+
+    var soporta = 'IntersectionObserver' in window;
+    var obs = soporta ? new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (e) {
+        if (e.isIntersecting) arrancar(e.target); else parar(e.target);
+      });
+    }, { rootMargin: '80px' }) : null;
+
+    function pasar(caja) {
+      var slides = caja.querySelectorAll('img.slide');
+      var puntos = caja.querySelectorAll('.pieza-dots i');
+      if (slides.length < 2) return;
+      var i = +(caja.getAttribute('data-i') || 0);
+      slides[i].classList.remove('activa');
+      if (puntos[i]) puntos[i].classList.remove('activo');
+      i = (i + 1) % slides.length;
+      slides[i].classList.add('activa');
+      if (puntos[i]) puntos[i].classList.add('activo');
+      caja.setAttribute('data-i', i);
+    }
+
+    function arrancar(caja) {
+      if (caja._t) return;
+      var espera = +(caja.getAttribute('data-offset') || 0);
+      caja._d = setTimeout(function () {
+        pasar(caja);
+        caja._t = setInterval(function () { pasar(caja); }, 3400);
+      }, espera);
+    }
+    function parar(caja) {
+      clearTimeout(caja._d); clearInterval(caja._t);
+      caja._d = null; caja._t = null;
+    }
+
+    Array.prototype.forEach.call(cajas, function (caja, n) {
+      caja.setAttribute('data-i', 0);
+      caja.setAttribute('data-offset', (n % 5) * 680);
+      caja.querySelectorAll('.pieza-dots i').forEach(function (pt, k) {
+        pt.addEventListener('click', function (ev) {
+          ev.preventDefault(); ev.stopPropagation();
+          var slides = caja.querySelectorAll('img.slide');
+          var puntos = caja.querySelectorAll('.pieza-dots i');
+          var actual = +(caja.getAttribute('data-i') || 0);
+          slides[actual].classList.remove('activa');
+          puntos[actual].classList.remove('activo');
+          slides[k].classList.add('activa');
+          puntos[k].classList.add('activo');
+          caja.setAttribute('data-i', k);
+        });
+      });
+      if (obs) obs.observe(caja); else arrancar(caja);
+    });
   }
 
   var NAV_ITEMS = [
@@ -134,7 +209,7 @@
     esc: esc, slug: slug,
     cargarDatos: cargarDatos, agrupar: agrupar,
     linksContacto: linksContacto, aplicarContactoGlobal: aplicarContactoGlobal,
-    tarjetaPieza: tarjetaPieza,
+    tarjetaPieza: tarjetaPieza, activarGalerias: activarGalerias,
     renderNav: renderNav, renderFooter: renderFooter
   };
 })(window);
