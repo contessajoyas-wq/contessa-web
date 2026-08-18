@@ -1,24 +1,10 @@
 {
   "colecciones": [
-    {
-      "nombre": "Notte",
-      "descripcion": "Cristales azul noche y negro. Piezas de carácter, para las ocasiones que se recuerdan.",
-      "visible": true
-    },
-    {
-      "nombre": "Día",
-      "descripcion": "Dorados, champagne y perla. Piezas luminosas para elevar cualquier día.",
-      "visible": true
-    },
-    {
-      "nombre": "Aros",
-      "descripcion": "Del aro clásico al racimo de cristal. El detalle que enmarca la cara.",
-      "visible": true
-    },
-    {
-      "nombre": "Pulseras",
-      "descripcion": "Tejidas a mano, para llevar solas o combinadas.",
-      "visible": true
-    }
+    { "nombre": "Notte", "descripcion": "Collares tejidos a mano en cristal facetado. Piezas statement para las ocasiones que se recuerdan.", "visible": true },
+    { "nombre": "Lungo", "descripcion": "Collares largos y lariats. Para enrollar, cruzar o dejar caer, como más te guste.", "visible": true },
+    { "nombre": "Fiore", "descripcion": "Dijes tejidos en forma de flor sobre cordón, y los Sinfín de vueltas infinitas. Delicados y con carácter propio.", "visible": true },
+    { "nombre": "Aros", "descripcion": "Del aro clásico al racimo de cristal. El detalle que enmarca la cara.", "visible": true },
+    { "nombre": "Pulseras", "descripcion": "Tejidas a mano, para llevar solas o combinadas entre sí.", "visible": true },
+    { "nombre": "Accesorios", "descripcion": "Cordones para celular, con el mismo cuidado artesanal de cada pieza.", "visible": true }
   ]
 }

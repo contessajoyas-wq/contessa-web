@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nosotros — CONTESSA</title>
+<meta name="description" content="CONTESSA es una marca argentina de bijouterie inspirada en la elegancia italiana. Piezas tejidas a mano, de a una, en Buenos Aires.">
+<link rel="icon" href="/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Cinzel:wght@400;500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body data-page="nosotros">
+
+<div id="nav-placeholder"></div>
+
+<div class="pagehero">
+  <div class="wrap">
+    <p class="eyebrow">Elegancia · Feminidad · Distinción · Italia</p>
+    <h1>Nuestra esencia</h1>
+    <p>Piezas pensadas para transformar un look y acompañar a la mujer en distintos momentos de su vida.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="esencia">
+      <div>
+        <p class="eyebrow">Cómo nace CONTESSA</p>
+        <h2 style="font-size:29px;color:var(--oroOsc);margin-bottom:18px;">Cada pieza guarda una historia</h2>
+        <p>CONTESSA es una marca argentina de bijouterie y accesorios femeninos, inspirada en la elegancia italiana: esa mezcla de sofisticación, sensualidad y naturalidad tan propia de las mujeres de Italia.</p>
+        <p>No buscamos simplemente hacer accesorios bonitos. Buscamos crear piezas que se sientan especiales, un pequeño objeto de deseo.</p>
+        <p>Trabajamos con cristales, perlas y mostacillas cuidadosamente seleccionadas, combinando texturas y detalles artesanales para que cada diseño tenga presencia y personalidad propia. Cada pieza se teje a mano, de a una — nada sale en serie.</p>
+        <div class="divider" style="margin-left:0;justify-content:flex-start;max-width:130px;"><span>✦</span></div>
+      </div>
+      <div class="foto"><img src="/img/esencia.jpg" alt="Collar CONTESSA" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<div class="banda">
+  <img src="/img/banda.jpg" alt="Collar CONTESSA">
+  <div class="txt">
+    <h2>Un pequeño objeto de deseo</h2>
+    <p>Elegancia, brillo y detalles cuidadosamente seleccionados</p>
+  </div>
+</div>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Por qué CONTESSA</p>
+      <h2>Lo que nos distingue</h2>
+      <div class="divider"><span>✦</span></div>
+    </div>
+    <div class="valores">
+      <div class="valor"><div class="ico">✦</div><h3>Diseño atemporal</h3><p>Piezas que no pasan de moda y acompañan cualquier etapa.</p></div>
+      <div class="valor"><div class="ico">◇</div><h3>Cristales seleccionados</h3><p>Cristal, perla y mostacilla elegidos uno por uno.</p></div>
+      <div class="valor"><div class="ico">♡</div><h3>Tejido a mano</h3><p>Cada pieza se arma de a una, con dedicación y detalle.</p></div>
+      <div class="valor"><div class="ico">✉</div><h3>Envíos a todo el país</h3><p>Llega en su packaging CONTESSA, listo para regalar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Un universo propio</p>
+      <h2>Colecciones con nombre italiano</h2>
+      <div class="divider"><span>✦</span></div>
+      <p>Gala, Lungo, Fiore, Aros, Pulseras y Accesorios — seis líneas que conviven bajo un mismo espíritu: elegancia, feminidad y distinción, con Italia como inspiración constante.</p>
+    </div>
+    <div style="text-align:center;">
+      <a class="cta" href="/coleccion.html">Ver la colección</a>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script src="/js/datos.js"></script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+(function(){
+  CONTESSA.renderNav();
+  CONTESSA.cargarDatos().then(function(d){
+    CONTESSA.renderFooter(d.cfg);
+    CONTESSA.aplicarContactoGlobal(d.cfg);
+  });
+})();
+</script>
+
+</body>
+</html>
