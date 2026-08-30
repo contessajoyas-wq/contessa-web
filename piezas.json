@@ -3,7 +3,7 @@
     {
       "nombre": "Aros Noir",
       "descripcion": "Cristales negros facetados en diseño artesanal, de líneas elegantes y alta moda",
-      "precio": "$40.000",
+      "precio": "$35.000",
       "coleccion": "Aros",
       "foto": "/media/aros-noir.jpg",
       "visible": true,
@@ -56,7 +56,7 @@
     {
       "nombre": "Aros Portofino",
       "descripcion": "Una combinación preciosa de azul profundo, cristales facetados y delicados detalles plateados",
-      "precio": "$25.000",
+      "precio": "$30.000",
       "coleccion": "Aros",
       "foto": "/media/aros-portofino.jpg",
       "visible": true,
