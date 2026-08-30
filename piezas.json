@@ -3,7 +3,7 @@
     {
       "nombre": "Aros Noir",
       "descripcion": "Cristales negros facetados en diseño artesanal, de líneas elegantes y alta moda",
-      "precio": "$30.000",
+      "precio": "$40.000",
       "coleccion": "Aros",
       "foto": "/media/aros-noir.jpg",
       "visible": true,
@@ -18,7 +18,7 @@
     {
       "nombre": "Aros Venezia",
       "descripcion": "Cristales en tonos chocolate y ámbar con destellos que reflejan la luz en cada movimiento",
-      "precio": "$25.000",
+      "precio": "$30.000",
       "coleccion": "Aros",
       "foto": "/media/aros-venezia.jpg",
       "visible": true
@@ -48,7 +48,7 @@
     {
       "nombre": "Aros Bellagio",
       "descripcion": "Elegancia, luz y movimiento en una pieza artesanal inspirada en el encanto italiano",
-      "precio": "$20.000",
+      "precio": "$25.000",
       "coleccion": "Aros",
       "foto": "/media/aros-bellagio.jpg",
       "visible": true
@@ -56,7 +56,7 @@
     {
       "nombre": "Aros Portofino",
       "descripcion": "Una combinación preciosa de azul profundo, cristales facetados y delicados detalles plateados",
-      "precio": "$20.000",
+      "precio": "$25.000",
       "coleccion": "Aros",
       "foto": "/media/aros-portofino.jpg",
       "visible": true,
