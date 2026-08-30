@@ -265,7 +265,7 @@
     {
       "nombre": "Lungo Contessa",
       "descripcion": "Multihilera en cristales bronce y perlas: una sola hebra o tres hileras para más volumen. Nudo central y flecos en perla y cristal",
-      "precio": "$65.000",
+      "precio": "$75.000",
       "coleccion": "Lungo",
       "foto": "/media/lungo-contessa.jpg",
       "visible": true,
@@ -318,7 +318,7 @@
     {
       "nombre": "Lungo Ambra",
       "descripcion": "Extralargo tejido en tonos ámbar, caramelo y dorado, rematado en dos esferas tejidas a modo de racimo brillante",
-      "precio": "$70.000",
+      "precio": "$ 65.000",
       "coleccion": "Lungo",
       "foto": "/media/lungo-ambra.jpg",
       "visible": true
@@ -341,7 +341,7 @@
     {
       "nombre": "Lungo Passione",
       "descripcion": "Cristales facetados rojos con dijes metálicos ornamentales, cae en tiras de cuero gamuzado rojo. Efecto lariat con movimiento",
-      "precio": "$65.000",
+      "precio": "$45.000",
       "coleccion": "Lungo",
       "foto": "/media/lungo-passione.jpg",
       "visible": true,
@@ -418,7 +418,7 @@
     {
       "nombre": "Fiori Girasole",
       "descripcion": "Collar lariat sobre cordón de gamuza beige, dije floral en tonos crema y verde iridiscente. Se anuda de distintas formas",
-      "precio": "$65.000",
+      "precio": "$55.000",
       "coleccion": "Fiore",
       "foto": "/media/fiori-girasole.jpg",
       "visible": true
@@ -426,7 +426,7 @@
     {
       "nombre": "Fiori Girasole Tierra",
       "descripcion": "Collar lariat sobre cordón de gamuza marrón, dije floral en tonos crema y verde iridiscente. Look boho-chic con textura",
-      "precio": "$65.000",
+      "precio": "$55.000",
       "coleccion": "Fiore",
       "foto": "/media/fiori-girasole-tierra.jpg",
       "visible": true
@@ -434,7 +434,7 @@
     {
       "nombre": "Sinfín Rubí",
       "descripcion": "Extralargo en cuentas de cristal rojas con separadores en plata, sin cierre: varias vueltas al cuello o enrollado en la muñeca",
-      "precio": "$75.000",
+      "precio": "$55.000",
       "coleccion": "Fiore",
       "foto": "/media/sinfin-rubi.jpg",
       "visible": true,
@@ -446,7 +446,7 @@
     {
       "nombre": "Sinfín Arena",
       "descripcion": "Extralargo en cuentas de cristal crudo con separadores en plata, sin cierre: varias vueltas al cuello o enrollado en la muñeca",
-      "precio": "$75.000",
+      "precio": "$55.000",
       "coleccion": "Fiore",
       "foto": "/media/sinfin-arena.jpg",
       "visible": true
