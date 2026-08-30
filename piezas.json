@@ -76,7 +76,7 @@
     {
       "nombre": "Pulsera Siena",
       "descripcion": "Diseño tejido artesanal en tonos ámbar, caramelo y rosa cobrizo, cierre dorado y cadena extensible",
-      "precio": "$40.000",
+      "precio": "$55.000",
       "coleccion": "Pulseras",
       "foto": "/media/pulsera-siena.jpg",
       "visible": true
@@ -84,7 +84,7 @@
     {
       "nombre": "Pulsera Azzurra",
       "descripcion": "Fresca y elegante, inspirada en los tonos del Mediterráneo",
-      "precio": "$40.000",
+      "precio": "$45.000",
       "coleccion": "Pulseras",
       "foto": "/media/pulsera-azzurra.jpg",
       "visible": true,
@@ -98,7 +98,7 @@
     {
       "nombre": "Pulsera Noir",
       "descripcion": "Pieza sofisticada en cristales negros de distintos tamaños, con efecto tejido y cierre T-bar plateado",
-      "precio": "$40.000",
+      "precio": "$45.000",
       "coleccion": "Pulseras",
       "foto": "/media/pulsera-noir.jpg",
       "visible": true,
@@ -116,25 +116,25 @@
       "visible": true
     },
     {
-      "nombre": "Cordón Amore",
+      "nombre": "Accesorio Amore",
       "descripcion": "Elegante soporte en cristales brillantes que también se luce como pulsera",
-      "precio": "$30.000",
+      "precio": "$ 25.000",
       "coleccion": "Accesorios",
       "foto": "/media/cordon-amore.jpg",
       "visible": true
     },
     {
-      "nombre": "Cordón Girasol",
+      "nombre": "Accesorio Girasol",
       "descripcion": "Un girasol brillante en cristales que suma color y alegría a tu celular",
-      "precio": "$30.000",
+      "precio": "$ 25.000",
       "coleccion": "Accesorios",
       "foto": "/media/cordon-girasol.jpg",
       "visible": true
     },
     {
-      "nombre": "Cordón Fiore",
+      "nombre": "Accesorio Fiore",
       "descripcion": "Delicadas flores en cristales que embellecen tu celular con un toque único",
-      "precio": "$30.000",
+      "precio": "$ 25.000",
       "coleccion": "Accesorios",
       "foto": "/media/cordon-fiore.jpg",
       "visible": true
