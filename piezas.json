@@ -463,6 +463,17 @@
         "/media/10-fiore-petalos..jpg"
       ],
       "foto": "/media/10-fiore-petalos....jpg"
+    },
+    {
+      "visible": true,
+      "foto": "/media/8-lungo-corbatin....jpg",
+      "fotos": [
+        "/media/8-lungo-corbatin....jpg",
+        "/media/8-lungo-corbatin-2-.jpg"
+      ],
+      "nombre": "LUNGO CORBATIN",
+      "precio": "$ 65000",
+      "coleccion": "Lungo"
     }
   ]
 }
