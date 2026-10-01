@@ -29,6 +29,10 @@
       "nombre": "Accesorios",
       "descripcion": "Cordones para celular, con el mismo cuidado artesanal de cada pieza.",
       "visible": true
+    },
+    {
+      "visible": true,
+      "nombre": "ANILLOS"
     }
   ]
 }
