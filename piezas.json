@@ -475,6 +475,14 @@
       "precio": "$ 55000",
       "coleccion": "Lungo",
       "descripcion": "Cristales que captan la luz, mucho brillo y correas de gamuza que le dan ese toque canchero y diferente.  Un diseño largo, liviano y con mucha onda, que cae sobre el cuerpo y se mueve con vos. El detalle de cristales en cada terminación le pone el toque justo de luz y personalidad.  🖤 Negro 💚 Verde 🤍 Beige 🤎 Marrón"
+    },
+    {
+      "visible": true,
+      "nombre": "ESMERALDA",
+      "descripcion": "Una pieza delicada y sofisticada, tejida artesanalmente con cristales en distintas tonalidades de verde, piedras naturales y detalles dorados. Su diseño combina texturas y brillos que evocan la frescura de la naturaleza y aportan un toque elegante y luminoso a cualquier look.",
+      "precio": "$45.000",
+      "coleccion": "Pulseras",
+      "foto": "/media/esmeralda.jpg"
     }
   ]
 }
