@@ -32,7 +32,8 @@
     },
     {
       "visible": true,
-      "nombre": "ANILLOS"
+      "nombre": "Anillos",
+      "descripcion": "Anillos tejidos en cristales"
     }
   ]
 }
