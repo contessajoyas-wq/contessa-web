@@ -71,7 +71,11 @@
       "precio": "$30.000",
       "coleccion": "Pulseras",
       "foto": "/media/pulsera-ravena.jpg",
-      "visible": true
+      "visible": true,
+      "fotos": [
+        "/media/pulsera-ravena.jpg",
+        "/media/pulsera-ravena-2-.jpg"
+      ]
     },
     {
       "nombre": "Pulsera Siena",
@@ -491,9 +495,7 @@
       "coleccion": "Pulseras",
       "descripcion": "Una pulsera envolvente que celebra la belleza de lo natural. Piedras naturales, cristales y delicados detalles en tonos verdes, agua y tierra se combinan en un diseño artesanal, lleno de textura y personalidad.",
       "foto": "/media/amazonia.jpg",
-      "fotos": [
-        "/media/e3edd973-939b-427c-9af3-6e93508942d7.jpg"
-      ]
+      "fotos": []
     }
   ]
 }
