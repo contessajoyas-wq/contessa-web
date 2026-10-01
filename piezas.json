@@ -496,6 +496,17 @@
       "descripcion": "Una pulsera envolvente que celebra la belleza de lo natural. Piedras naturales, cristales y delicados detalles en tonos verdes, agua y tierra se combinan en un diseño artesanal, lleno de textura y personalidad.",
       "foto": "/media/amazonia.jpg",
       "fotos": []
+    },
+    {
+      "visible": true,
+      "nombre": "ANILLO IMPERIO",
+      "descripcion": "Una pieza de presencia imponente y delicada a la vez. Su diseño redondeado, trabajado artesanalmente con pequeños cristales y mostacillas, crea una textura de gran volumen y un brillo fascinante.",
+      "precio": "$25.000",
+      "coleccion": "Anillos",
+      "foto": "/media/anillo-imperio.jpg",
+      "fotos": [
+        "/media/anillo-imperio-2-.jpg"
+      ]
     }
   ]
 }
