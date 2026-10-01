@@ -490,7 +490,10 @@
       "precio": "$45.000",
       "coleccion": "Pulseras",
       "descripcion": "Una pulsera envolvente que celebra la belleza de lo natural. Piedras naturales, cristales y delicados detalles en tonos verdes, agua y tierra se combinan en un diseño artesanal, lleno de textura y personalidad.",
-      "foto": "/media/amazonia.jpg"
+      "foto": "/media/amazonia.jpg",
+      "fotos": [
+        "/media/e3edd973-939b-427c-9af3-6e93508942d7.jpg"
+      ]
     }
   ]
 }
