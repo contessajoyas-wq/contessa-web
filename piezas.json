@@ -413,7 +413,7 @@
       "nombre": "Sinfín Rubí",
       "descripcion": "Extralargo en cuentas de cristal rojas con separadores acero, varias vueltas al cuello o enrollado en la muñeca",
       "precio": "$60.000",
-      "coleccion": "Fiore",
+      "coleccion": "Marea 2027",
       "foto": "/media/sinfin-rubi.jpg",
       "visible": true,
       "fotos": [
@@ -425,7 +425,7 @@
       "nombre": "Sinfín Arena",
       "descripcion": "Extralargo en cuentas de cristal crudo con separadores acero, varias vueltas al cuello o enrollado en la muñeca",
       "precio": "$60.000",
-      "coleccion": "Fiore",
+      "coleccion": "Marea 2027",
       "foto": "/media/sinfin-arena.jpg",
       "visible": true
     },
@@ -505,7 +505,8 @@
       "fotos": [
         "/media/6-verano.jpeg",
         "/media/6-verano.png"
-      ]
+      ],
+      "foto": "/media/6-verano.jpeg"
     }
   ]
 }
