@@ -68,7 +68,7 @@
     {
       "nombre": "Pulsera Ravena",
       "descripcion": "Pieza delicada y luminosa con pequeños cristales facetados que reflejan la luz con cada movimiento",
-      "precio": "$35.000",
+      "precio": "$40.000",
       "coleccion": "Pulseras",
       "foto": "/media/pulsera-ravena.jpg",
       "visible": true,
@@ -423,7 +423,7 @@
     },
     {
       "nombre": "Sinfín Arena",
-      "descripcion": "Extralargo en cuentas de cristal crudo con separadores en plata, sin cierre: varias vueltas al cuello o enrollado en la muñeca",
+      "descripcion": "Extralargo en cuentas de cristal crudo con separadores acero, varias vueltas al cuello o enrollado en la muñeca",
       "precio": "$60.000",
       "coleccion": "Fiore",
       "foto": "/media/sinfin-arena.jpg",
@@ -487,7 +487,7 @@
       "visible": true,
       "nombre": "Marea Collar Amatista",
       "descripcion": "Un collar que captura la esencia del verano: piedras naturales en tonos granate y amatista se combinan con delicadas cuentas doradas y detalles inspirados en el mar.",
-      "precio": "$59.000",
+      "precio": "$65.000",
       "foto": "/media/6-verano-2-.png",
       "fotos": [
         "/media/6-verano-6-.png",
@@ -495,6 +495,17 @@
         "/media/2-amatista.jpg"
       ],
       "coleccion": "Marea 2027"
+    },
+    {
+      "visible": true,
+      "nombre": "MAREA COLLAR TURQUEZA",
+      "descripcion": "PIEDRAS NATURALES, TURQUEZAS DIJES ACCESORIOS",
+      "precio": "$ 65.000",
+      "coleccion": "Marea 2027",
+      "fotos": [
+        "/media/6-verano.jpeg",
+        "/media/6-verano.png"
+      ]
     }
   ]
 }
