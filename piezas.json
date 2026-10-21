@@ -506,6 +506,25 @@
         "/media/8-finitos-piedras-naturales.png",
         "/media/2-verano-piedra-natural.jpg"
       ]
+    },
+    {
+      "visible": true,
+      "foto": "/media/finitos-bañados-en-oro-cristales-y-dijes-5-.png",
+      "nombre": "SOL DEL VERANO",
+      "descripcion": "CADENAS BAÑADAS EN ORO CON DIJES ",
+      "precio": "$55.000",
+      "coleccion": "Marea 2027"
+    },
+    {
+      "visible": true,
+      "nombre": "INMANTADOS",
+      "descripcion": "CORODNES INMANTADOS COMO COLLAR O PUSERA COMPLEMENTO EN DIJE",
+      "precio": "$49.000",
+      "coleccion": "Marea 2027",
+      "fotos": [
+        "/media/3-imantados.png",
+        "/media/3-imantados-2-.jpg"
+      ]
     }
   ]
 }
