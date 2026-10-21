@@ -485,7 +485,7 @@
     },
     {
       "visible": true,
-      "nombre": "MAREA COLLAR TURQUEZA",
+      "nombre": "Marea collar Turqueza",
       "descripcion": "PIEDRAS NATURALES, TURQUEZAS DIJES ACCESORIOS",
       "precio": "$ 65.000",
       "coleccion": "Marea 2027",
@@ -498,7 +498,7 @@
     {
       "visible": true,
       "foto": "/media/2-verano-amatista-piedra-natural.jpg",
-      "nombre": "COLLAR CAPRI",
+      "nombre": "Collar Capri",
       "descripcion": "FINITOS PIEDDRAS NATURALES AGUAMARINAS Y DIJE",
       "precio": "$ 55.000",
       "coleccion": "Marea 2027",
@@ -511,14 +511,14 @@
     {
       "visible": true,
       "foto": "/media/finitos-bañados-en-oro-cristales-y-dijes-5-.png",
-      "nombre": "SOL DEL VERANO",
+      "nombre": "Sol del Verano",
       "descripcion": "CADENAS BAÑADAS EN ORO CON DIJES ",
       "precio": "$55.000",
       "coleccion": "Marea 2027"
     },
     {
       "visible": true,
-      "nombre": "INMANTADOS",
+      "nombre": "Inmantados",
       "descripcion": "CORODNES INMANTADOS COMO COLLAR O PUSERA COMPLEMENTO EN DIJE",
       "precio": "$49.000",
       "coleccion": "Marea 2027",
@@ -533,7 +533,7 @@
       "fotos": [
         "/media/992fa2d3-4f46-494d-9935-33f5102a1df7.jpg"
       ],
-      "nombre": "ANILLO ROSA",
+      "nombre": "Anillo rosa",
       "descripcion": "ANILLOS EN CRISTALES Y MOSTASILLA CON FORMA DE ROSA EN DIFERENTES COLORES DE ACUERDO A TU IMAGEN",
       "precio": "$30.000",
       "coleccion": "Anillos"
