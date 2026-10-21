@@ -485,19 +485,6 @@
     },
     {
       "visible": true,
-      "nombre": "Marea Collar Amatista",
-      "descripcion": "Un collar que captura la esencia del verano: piedras naturales en tonos granate y amatista se combinan con delicadas cuentas doradas y detalles inspirados en el mar.",
-      "precio": "$65.000",
-      "foto": "/media/6-verano-2-.png",
-      "fotos": [
-        "/media/6-verano-6-.png",
-        "/media/2-verano-piedra-natural-amatista.jpg",
-        "/media/2-amatista.jpg"
-      ],
-      "coleccion": "Marea 2027"
-    },
-    {
-      "visible": true,
       "nombre": "MAREA COLLAR TURQUEZA",
       "descripcion": "PIEDRAS NATURALES, TURQUEZAS DIJES ACCESORIOS",
       "precio": "$ 65.000",
@@ -507,6 +494,18 @@
         "/media/6-verano.png"
       ],
       "foto": "/media/6-verano.jpeg"
+    },
+    {
+      "visible": true,
+      "foto": "/media/2-verano-amatista-piedra-natural.jpg",
+      "nombre": "COLLAR CAPRI",
+      "descripcion": "FINITOS PIEDDRAS NATURALES AGUAMARINAS Y DIJE",
+      "precio": "$ 55.000",
+      "coleccion": "Marea 2027",
+      "fotos": [
+        "/media/8-finitos-piedras-naturales.png",
+        "/media/2-verano-piedra-natural.jpg"
+      ]
     }
   ]
 }
